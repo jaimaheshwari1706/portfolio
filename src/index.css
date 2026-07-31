@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Color: engineering notebook / blueprint paper ---- */
+  --color-paper: #F4EFE4;
+  --color-paper-dim: #ECE5D5;
+  --color-paper-line: #E4DCC8;
+
+  --color-ink: #17140F;
+  --color-ink-soft: #4A4438;
+  --color-ink-faint: #635C4C;
+
+  --color-signal: #E8541C;
+  --color-signal-dim: #B33F13;
+  --color-signal-tint: #FBE4D6;
+
+  --color-blueprint: #35516B;
+  --color-blueprint-dim: #26394C;
+
+  --color-paper-dark: #EDE7D9;
+
+  /* ---- Type ---- */
+  --font-display: "Space Grotesk", "Inter", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* ---- Motion easing ---- */
+  --ease-blueprint: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background-color: var(--color-signal);
+    color: var(--color-paper);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-signal);
+    outline-offset: 3px;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
+}
+
+@layer utilities {
+  /* Fine technical grid, like graph/blueprint paper */
+  .bp-grid {
+    background-image:
+      linear-gradient(to right, rgba(23, 20, 15, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(23, 20, 15, 0.05) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  .bp-grid-fine {
+    background-image:
+      linear-gradient(to right, rgba(53, 81, 107, 0.08) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(53, 81, 107, 0.08) 1px, transparent 1px);
+    background-size: 16px 16px;
+  }
+
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .paper-texture {
+    background-image: radial-gradient(rgba(23, 20, 15, 0.035) 1px, transparent 1px);
+    background-size: 3px 3px;
+  }
+}

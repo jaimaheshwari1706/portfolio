@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://jaimaheshwari.dev/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://jaimaheshwari.dev/work/enterprise-hrms</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jaimaheshwari.dev/work/job-copilot</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://jaimaheshwari.dev/work/analytics-dashboard</loc>
+    <priority>0.8</priority>
+  </url>
+</urlset>
