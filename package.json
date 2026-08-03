@@ -1,5 +1,12 @@
 {
   "name": "portfolio",
+  "description": "Personal software-engineering portfolio for Jai Maheshwari — React 19 + TypeScript SPA with evidence-based project case studies.",
+  "author": "Jai Maheshwari",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jaimaheshwari1706/portfolio.git"
+  },
   "private": true,
   "version": "0.0.0",
   "type": "module",
