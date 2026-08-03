@@ -179,13 +179,15 @@ Tracked as `TODO(content)` in `src/config/site.ts` and `src/data/projects.ts` �
 not fabricated here, just listed honestly:
 
 - Replace the placeholder domain (`jaimaheshwari.dev` does not currently
-  resolve), contact email, and LinkedIn handle with real values, then set
-  `VITE_SITE_URL` on the deploy host.
+  resolve) and set `VITE_SITE_URL` on the deploy host once this site is
+  actually deployed. (Contact email and LinkedIn handle are no longer
+  placeholders — sourced from the GitHub profile README, which already had
+  real values filled in.)
 - Add a real, hosted resume PDF at the path used by `resumeUrl`.
 - Wire the (currently unused) `ProjectScreenshot` component into each case
-  study with real product screenshots once those repos are documented.
-- Fill in `url`/`repo` on each `projects.ts` entry now that Enterprise HRMS,
-  Job Copilot, and Analytics Dashboard all have public GitHub repos.
+  study with real product screenshots — `projects.ts` entries now link to
+  all three real, public repos via `repo`, so the screenshots those repos
+  just gained could be pulled in here too.
 - `react-router`/`react-router-dom` currently carry a high-severity advisory
   ([GHSA-qwww-vcr4-c8h2](https://github.com/advisories/GHSA-qwww-vcr4-c8h2))
   scoped to RSC mode, which this app doesn't use; worth a non-breaking

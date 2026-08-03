@@ -20,13 +20,15 @@ export const siteConfig = {
   // TODO(content): replace with a real, hosted resume PDF (e.g. /resume.pdf in /public)
   resumeUrl: "/resume.pdf",
 
-  email: "jai.maheshwari@example.com", // TODO(content): real contact email
+  email: "jaimaheshwari943@gmail.com",
   get emailHref() {
     return `mailto:${this.email}`;
   },
 
   github: "https://github.com/jaimaheshwari1706",
-  linkedin: "https://linkedin.com/in/jaimaheshwari", // TODO(content): confirm real LinkedIn handle
+  // Sourced from the profile README's own Connect section, which already
+  // had this filled in with a real (non-placeholder) handle.
+  linkedin: "https://www.linkedin.com/in/jai-maheshwari-1706n",
 
   /**
    * Whether to show the "Available for opportunities" indicator in the hero.

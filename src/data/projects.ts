@@ -51,6 +51,7 @@ export const projects: Project[] = [
       "Supertest",
     ],
     hasCaseStudy: true,
+    repo: "https://github.com/jaimaheshwari1706/enterprise-hrms",
   },
   {
     slug: "job-copilot",
@@ -83,6 +84,7 @@ export const projects: Project[] = [
       "Vitest",
     ],
     hasCaseStudy: true,
+    repo: "https://github.com/jaimaheshwari1706/job-copilot",
   },
   {
     slug: "analytics-dashboard",
@@ -115,5 +117,6 @@ export const projects: Project[] = [
       "Recharts",
     ],
     hasCaseStudy: true,
+    repo: "https://github.com/jaimaheshwari1706/analytics-dashboard",
   },
 ];
