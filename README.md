@@ -2,6 +2,7 @@
 
 A software-engineering portfolio built as an evidence-sourced "engineering notebook" rather than a marketing page.
 
+[![CI](https://github.com/jaimaheshwari1706/portfolio/actions/workflows/ci.yml/badge.svg)](https://github.com/jaimaheshwari1706/portfolio/actions/workflows/ci.yml)
 ![License: Unlicensed](https://img.shields.io/badge/license-unlicensed-lightgrey)
 
 ## Overview
@@ -33,12 +34,12 @@ diagram below is the build → deploy → runtime path.
 
 ```mermaid
 flowchart LR
-  Dev["npm run dev / build"] --> SEO["generate-seo-files.mjs\n(robots.txt + sitemap.xml)"]
+  Dev["npm run dev / build"] --> SEO["generate-seo-files.mjs<br/>(robots.txt + sitemap.xml)"]
   SEO --> Vite["Vite build"]
   Vite --> Static["Static assets (dist/)"]
-  Static --> Host["Vercel / Netlify\n(SPA rewrite -> index.html)"]
-  Host --> Browser["Browser: React 19 SPA\nReact Router (client-side routing)"]
-  Browser --> Meta["usePageMeta():\nper-route title / OG / canonical tags"]
+  Static --> Host["Vercel / Netlify<br/>(SPA rewrite to index.html)"]
+  Host --> Browser["Browser: React 19 SPA<br/>React Router (client-side routing)"]
+  Browser --> Meta["usePageMeta()<br/>per-route title / OG / canonical tags"]
 ```
 
 Content flows one way: `src/data/*.ts` (typed copy) → `src/sections/` and
@@ -185,9 +186,6 @@ not fabricated here, just listed honestly:
   study with real product screenshots once those repos are documented.
 - Fill in `url`/`repo` on each `projects.ts` entry now that Enterprise HRMS,
   Job Copilot, and Analytics Dashboard all have public GitHub repos.
-- Add a CI badge to this README once the new GitHub Actions workflow has a
-  verified green run (not added yet — a badge shouldn't claim a status that
-  hasn't actually been observed passing).
 - `react-router`/`react-router-dom` currently carry a high-severity advisory
   ([GHSA-qwww-vcr4-c8h2](https://github.com/advisories/GHSA-qwww-vcr4-c8h2))
   scoped to RSC mode, which this app doesn't use; worth a non-breaking
