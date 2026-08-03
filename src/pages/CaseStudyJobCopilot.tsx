@@ -62,7 +62,7 @@ const scenarios = [
 export function CaseStudyJobCopilot() {
   usePageMeta(
     "Job Copilot",
-    "A job-search platform architected around a deterministic, unit-tested matching engine — 96 tests, 17 fixture-based scenarios, and an AI layer designed in as a swappable provider.",
+    "A job-search platform architected around a deterministic, unit-tested matching engine — 183 tests, 17 fixture-based scenarios, and an AI layer designed in as a swappable provider.",
     "/work/job-copilot"
   );
 
@@ -165,16 +165,16 @@ export function CaseStudyJobCopilot() {
 
       <Block code="04" title="Testing">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-2xl">
-          <Metric value="96" label="Total tests" />
+          <Metric value="183" label="Total tests" />
           <Metric
             value="17"
             label="Matching scenarios"
             context="Fixture-based: exact match, missing skill, JS≠TS, experience gaps, remote/location conflicts, score bounds."
           />
           <Metric
-            value="10"
+            value="11"
             label="Workspaces"
-            context="3 apps (web, api, worker) + 7 shared packages in the monorepo."
+            context="3 apps (web, api, worker) + 8 shared packages in the monorepo."
           />
           <Metric
             value="0"

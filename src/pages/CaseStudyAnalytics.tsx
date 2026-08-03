@@ -47,7 +47,7 @@ function Block({ code, title, children }: { code: string; title: string; childre
 export function CaseStudyAnalytics() {
   usePageMeta(
     "Analytics Dashboard",
-    "A role-aware business analytics platform with 96 backend tests, MongoDB aggregation-based KPIs, real-time notifications, and server-enforced RBAC.",
+    "A role-aware business analytics platform with 106 backend tests, MongoDB aggregation-based KPIs, real-time notifications, and server-enforced RBAC.",
     "/work/analytics-dashboard"
   );
 
@@ -120,7 +120,7 @@ export function CaseStudyAnalytics() {
       <Block code="03" title="Testing">
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 max-w-2xl">
           <Metric
-            value="96"
+            value="106"
             label="Backend tests"
             context="Unit, integration, and a dedicated security suite for rate limiting and RBAC boundaries."
           />

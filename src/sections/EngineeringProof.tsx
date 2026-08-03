@@ -12,7 +12,7 @@ type Evidence = {
 const evidence: Evidence[] = [
   {
     category: "Automated testing",
-    claim: "266 tests across three independent projects — 74 + 96 + 96, each suite runs and passes on its own.",
+    claim: "363 tests across three independent projects — 74 + 183 + 106, each suite runs and passes on its own.",
     source: "HRMS, Job Copilot, Analytics",
   },
   {

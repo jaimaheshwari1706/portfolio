@@ -66,12 +66,12 @@ export const projects: Project[] = [
       "apps/web + apps/api + apps/worker",
       "BullMQ background pipeline",
       "6-scorer deterministic engine",
-      "96 tests across 10 workspaces",
+      "183 tests across 11 workspaces",
     ],
     proof: [
-      { label: "Automated tests", value: "96", context: "Growing per build phase across every workspace — apps and packages both." },
+      { label: "Automated tests", value: "183", context: "Growing per build phase across every workspace — apps and packages both." },
       { label: "Matching scenarios", value: "17", context: "Fixture-based tests: exact match, missing skill, experience gaps, location/remote conflicts, score bounds." },
-      { label: "Workspaces", value: "10", context: "3 apps (web, api, worker) + 7 shared packages, with a hard no-cross-import boundary." },
+      { label: "Workspaces", value: "11", context: "3 apps (web, api, worker) + 8 shared packages, with a hard no-cross-import boundary." },
     ],
     stack: [
       "TypeScript",
@@ -98,10 +98,10 @@ export const projects: Project[] = [
       "React 19 + TanStack Query",
       "Express + aggregation pipelines",
       "Socket.io realtime layer",
-      "96 backend tests",
+      "106 backend tests",
     ],
     proof: [
-      { label: "Backend tests", value: "96", context: "Unit, integration, and a dedicated security suite for rate limiting and RBAC boundaries." },
+      { label: "Backend tests", value: "106", context: "Unit, integration, and a dedicated security suite for rate limiting and RBAC boundaries." },
       { label: "RBAC roles", value: "4", context: "Admin, Manager, Analyst, Viewer — gating every sensitive endpoint server-side." },
       { label: "Export formats", value: "3", context: "CSV, Excel, and PDF, across every major data view in the dashboard." },
     ],
